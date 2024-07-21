@@ -1,0 +1,95 @@
+{
+    "database": {
+        "1721428118999": {
+            "host": "0.0.0.0",
+            "port": 3306,
+            "user": "Raven",
+            "password": "dbclient_a$aQ7vxxNP/NLPI8sErpa4xw==",
+            "dbType": "MySQL",
+            "name": "CodespaceDB",
+            "advance": {
+                "hideSystemSchema": true,
+                "groupingTables": false
+            },
+            "treeFeatures": [],
+            "timezone": "+00:00",
+            "useConnectionString": false,
+            "usingSSH": false,
+            "useSocksProxy": false,
+            "useHTTPProxy": false,
+            "ssh": {
+                "host": "",
+                "port": 22,
+                "username": "root",
+                "type": "auto",
+                "privateKeyPath": null,
+                "serverType": "linux",
+                "connectTimeout": 5000,
+                "algorithms": {
+                    "kex": [
+                        "ecdh-sha2-nistp256",
+                        "ecdh-sha2-nistp384",
+                        "ecdh-sha2-nistp521",
+                        "diffie-hellman-group-exchange-sha256",
+                        "diffie-hellman-group14-sha256",
+                        "diffie-hellman-group15-sha512",
+                        "diffie-hellman-group16-sha512",
+                        "diffie-hellman-group17-sha512",
+                        "diffie-hellman-group18-sha512",
+                        "diffie-hellman-group14-sha1",
+                        "diffie-hellman-group-exchange-sha1"
+                    ],
+                    "cipher": [
+                        "aes128-gcm@openssh.com",
+                        "aes256-gcm@openssh.com",
+                        "aes128-ctr",
+                        "aes192-ctr",
+                        "aes256-ctr"
+                    ],
+                    "serverHostKey": [
+                        "ecdsa-sha2-nistp256",
+                        "ecdsa-sha2-nistp384",
+                        "ecdsa-sha2-nistp521",
+                        "rsa-sha2-512",
+                        "rsa-sha2-256",
+                        "ssh-rsa",
+                        "ssh-dss"
+                    ]
+                },
+                "disableSFTP": false,
+                "pruneSFTPRoot": true
+            },
+            "socksProxy": {
+                "host": null,
+                "port": 1080,
+                "type": 5
+            },
+            "httpProxy": {
+                "host": null,
+                "port": 3128
+            },
+            "athena": {},
+            "bigQuery": {},
+            "global": false,
+            "savePassword": "Forever",
+            "readonly": false,
+            "sort": 11,
+            "useSSL": false,
+            "fs": {
+                "encoding": "utf8",
+                "showHidden": true
+            },
+            "dm": {
+                "usingServiceName": false
+            },
+            "httpAuth": {
+                "authType": "none"
+            },
+            "key": "1721428118999",
+            "connectionKey": "database.connections",
+            "isJdbc": false,
+            "requiredAuth": true
+        }
+    },
+    "$schema": "https://cdn.database-client.com/dbclient/schema.json"
+}

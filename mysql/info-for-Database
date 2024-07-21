@@ -1,0 +1,34 @@
+Host: 0.0.0.0
+User: Raven
+Pass: 1229Raven!
+Port: 3306
+-----------------------------------------------------------------
+
+--Cheat-sheet for commands:
+-- Database Commands:
+-- Shows databases: SHOW DATABASES;
+-- Creates: CREATE DATABASE BREED;
+-- Deletes: DROP DATABASE BREED;
+-- Switches between databases: USE Names;
+-- Shows current database: SELECT DATABASE();
+
+--Table Commands:
+-- Shows all tables in a database: SHOW TABLES;
+-- Displays Columns of a table: SHOW COLUMN NAME;
+-- Display structure of table: DESC NAME;
+-- Delete a table: DROP TABLE NAME;
+-- Creates Table example:
+--CREATE TABLE Cat (
+    --name VARCHAR(50),
+    --Breed VARCHAR(50),
+    --Gender VARCHAR(50),
+    --Age INT
+--)
+
+-- Adding default values example:
+--CREATE TABLE Cat (
+    --name VARCHAR(50) DEFAULT 'Josie',
+    --Breed VARCHAR(50) DEFAULT 'Tuxedo',
+    --Gender VARCHAR(50) DEFAULT 'FEMALE',
+    --Age INT DEFAULT '3'
+--)
