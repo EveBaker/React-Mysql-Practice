@@ -4,64 +4,68 @@ Pass: 1229Raven!
 Port: 3306
 -----------------------------------------------------------------
 
---Cheat-sheet for commands:
+Cheat-sheet for commands:
 
--- Database Commands:
+Database Commands:
 -----------------------------------------------------------
--- Shows databases: SHOW DATABASES;
--- Creates: CREATE DATABASE BREED;
--- Deletes: DROP DATABASE BREED;
--- Switches between databases: USE Names;
--- Shows current database: SELECT DATABASE();
+Shows databases: SHOW DATABASES;
+Creates: CREATE DATABASE BREED;
+Deletes: DROP DATABASE BREED;
+Switches between databases: USE Names;
+Shows current database: SELECT DATABASE();
 
---Table Commands:
+Table Commands:
 ------------------------------------------------------------
--- Shows all tables in a database: SHOW TABLES;
--- Displays Columns of a table: SHOW COLUMN NAME;
--- Display structure of table: DESC NAME;
--- Delete a table: DROP TABLE NAME;
+Shows all tables in a database: SHOW TABLES;
+Displays Columns of a table: SHOW COLUMN NAME;
+Display structure of table: DESC NAME;
+Delete a table: DROP TABLE NAME;
 
--- Create Table example:
---CREATE TABLE Cat (
-    --name VARCHAR(50),
-    --Breed VARCHAR(50),
-    --Gender VARCHAR(50),
-    --Age INT
---)
+Create Table example:
+----------------------
+CREATE TABLE Cat (
+    name VARCHAR(50),
+    Breed VARCHAR(50),
+    Gender VARCHAR(50),
+    Age INT
+)
 
--- Adding default values example:
---CREATE TABLE Cat (
-    --name VARCHAR(50) DEFAULT 'Josie',
-    --Breed VARCHAR(50) DEFAULT 'Tuxedo',
-    --Gender VARCHAR(50) DEFAULT 'FEMALE',
-    --Age INT DEFAULT '3'
---)
+Adding default values example:
+-----------------------------------
+CREATE TABLE Cat (
+    name VARCHAR(50) DEFAULT 'Josie',
+    Breed VARCHAR(50) DEFAULT 'Tuxedo',
+    Gender VARCHAR(50) DEFAULT 'FEMALE',
+    Age INT DEFAULT '3'
+)
 
--- using DECIMAL,CHAR
---CREATE TABLE FLYER (
-    --Name VARCHAR(50),
-    --Date_posted INT,
-    --time_posted TIME DEFAULT "14:10:23",
-    --Phone_number INT,
-    --Description CHAR(50),
-    --Comment CHAR(50),
-    --Comment_date DATE DEFAULT "2024-07-21",
-    --Miles_from_location DECIMAL
-    --)
+using DECIMAL,CHAR
+------------------------------------
+CREATE TABLE FLYER (
+Name VARCHAR(50),
+    Date_posted INT,
+    time_posted TIME DEFAULT "14:10:23",
+    Phone_number INT,
+    Description CHAR(50),
+    Comment CHAR(50),
+    Comment_date DATE DEFAULT "2024-07-21",
+    Miles_from_location DECIMAL
+    )
 
--- Gets all data from Table or Database: SELECT * FROM FLYER
--- Gets only data you want: SELECT `Description` from `FLYER`
--- insert Data label: INSERT INTO FLYER(Name, Description);
--- Providing values for Labels: VALUES ('Josie', 'Tuxedo Cat');
+Gets all data from Table or Database: SELECT * FROM FLYER
+Gets only data you want: SELECT `Description` from `FLYER`
+insert Data label: INSERT INTO FLYER(Name, Description);
+Providing values for Labels: VALUES ('Josie', 'Tuxedo Cat');
 
--- Providing multiple values for Labels:
---INSERT INTO FLYER(Name,Description)
---VALUES ('Josie', 'Tuxedo Cat'),
-        --('Gracie', 'Tabby Cat')
+Providing multiple values for Labels:
+--------------------------------------------
+INSERT INTO FLYER(Name,Description)
+VALUES ('Josie', 'Tuxedo Cat'),
+        ('Gracie', 'Tabby Cat')
 
--- Select specific property from a table: SELECT PROPERTY FROM TABLE;
-                                --FOR EXAMPLE: SELECT Name FROM FLYER;
+Select specific property from a table: SELECT PROPERTY FROM TABLE;
+                                FOR EXAMPLE: SELECT Name FROM FLYER;
 
--- Select multiple propertys: Select PROPERTY1,PROPERTY2 FROM TABLE;
-                                --FOR EXAMPLE: SELECT Name, Description FROM FLYER;
+Select multiple propertys: Select PROPERTY1,PROPERTY2 FROM TABLE;
+                                FOR EXAMPLE: SELECT Name, Description FROM FLYER;
 
